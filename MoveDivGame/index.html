@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Move Div Using Arrow Keys!</title>
+		<script src="Move.js"></script>
+		<style>
+			*{
+			margin:0;
+			padding:0;
+		}
+
+		body{
+			
+			padding:20px;
+		}
+
+		#wrapper{
+
+		height:100%;
+		border:5px solid red;
+		background-color:green;
+		box-sizing:border-box;
+		}
+
+		#mydiv{
+
+		height:100px;
+		width:100px;
+		position:absolute;
+		background-color:blue;
+		left:100px;
+		top:100px;
+		}
+		
+		</style>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="mydiv">
+			</div>
+		</div>
+		<script>
+			function onBodyLoad(){
+				MoveDiv.init("mydiv");
+			}
+			window.addEventListener("load",onBodyLoad)
+		</script>
+	</body>
+</html>
