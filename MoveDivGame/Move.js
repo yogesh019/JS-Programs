@@ -59,6 +59,8 @@ var MoveDiv=(function(){
  
 	}
 	function init(id){
+		
+		console.log("yogesh");
 		if(id===undefined||document.getElementById(id)===null)
 			throw new Error("Please pass a valid id!")
 	
