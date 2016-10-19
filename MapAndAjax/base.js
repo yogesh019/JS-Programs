@@ -15,6 +15,7 @@ var Map=(function(){
         data:{'address':address},
         dataType:'json',
         success:function(data){
+             console.log(data);
              var location = data.results[0].geometry.location;
              changeCenter(location.lat, location.lng);
     
